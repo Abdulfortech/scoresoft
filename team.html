@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreSoft | Team</title>
+    <style>
+        
+        /**************** style for background ****************/
+        body{
+            /* opacity: 0.9 */
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+        }
+        /************** start : Navigation bar ***************/
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0c6fda;
+            /* opacity: 1 */
+        }
+        /**************** this organizes the navigation buttons horizantally and starting from right direction ****************/
+        .nav li {
+            float: right;
+        }
+        /* this places our logo to be in the left side of the navigation */
+        .nav li.active {
+            float: left;
+        }
+        /* this  gives a different style to our logo */
+        .nav li.active a {
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff;
+        }
+        /* this  gives a style to buttons on the navigation bar*/
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* this style handle the hover, it means the style that will appear if you hover the buttons */
+        li a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /* style for hovering over the logo */
+        .nav li.active a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /**************** end : navigation bar ****************/
+
+        /**************** start : title section ****************/
+        /* styling the title container */
+        .title-section {
+            border-width: 5px;
+            width: 600px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 55px;
+            text-align: center;
+        }
+        /* styling the title element */
+        .title-section h1{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 50px;
+            color: #0c6fda;
+            /* margin-left: 0px; */
+        }
+        /* styling sub title */
+        .sub-title{
+            color:#0c6fda;
+            text-align: left;
+        }
+        /**************** end : title section ****************/
+
+        /**************** start : grid container ****************/
+        .grid1-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            /* background-color: #2196F3; */
+            padding: 10px;
+        }
+        .grid1-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            align-items: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        .grid1-container > div img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .grid1-container > div h5 {
+            font-size: 20px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .grid1-container > div h6 {
+            font-size: 15px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        /**************** end : title section ****************/
+
+        /**************** end : footer ****************/
+        .footer {
+            /* position: fixed; */
+            margin-top: 200px;
+            height: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            background-color: #0c6fda;
+            color: white;
+            text-align: center;
+        }
+        /**************** end : footer ****************/
+
+    </style>
+</head>
+<body>
+    <!-- start : navigation bar -->
+    <ul class="nav">
+        <li class="active"><a href="index">ScoreSoft</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li ><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li ><a href="index.html">Home</a></li>
+    </ul>
+    <!-- end: navigation bar -->
+    <!-- start : body container -->
+    <div class="body">
+        <!-- section title -->
+        <div class="title-section">
+            <h1 class="title">ScoreSoft Team</h1>
+        </div>
+        <!-- grid container -->
+        <div class="grid1-container">
+            <!-- grid box -->
+            <div>
+                <img src="img/team/me.png">
+                <h5>Abdullahi Aminu Mudi</h5>
+                <h6>UG22ICT1012</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/mansur.jpg">
+                <h5>Mansur Mannir</h5>
+                <h6>UG22ICT1048</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/muhammad.jpg">
+                <h5>Muhammad Junaid</h5>
+                <h6>UG22ICT1043</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/faiza.jpg">
+                <h5>Faiza Adam Kankarofi</h5>
+                <h6>UG22ICT1025</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/habibu.jpg">
+                <h5>Habibu Aminu Habibu</h5>
+                <h6>UG22SEN1021</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/mubarrak.jpg">
+                <h5>Mubarak Adam Aminu</h5>
+                <h6>UG22ICT1078</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/maryam.jpg">
+                <h5>Maryam Wada Ado</h5>
+                <h6>UG22ICT1024</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/abdallah.jpg">
+                <h5>Abdallah Muazzam Yakasai</h5>
+                <h6>UG22SEN1017</h6>
+            </div>  
+            <!-- grid box -->
+            <div>
+                <img src="img/team/umar.jpg">
+                <h5>Umar Adam Umar</h5>
+                <h6>UG22SEN1008</h6>
+            </div>  
+            <!-- grid box -->
+            <div>
+                <img src="img/team/muazzam.jpg">
+                <h5>Muazzam Wada</h5>
+                <h6>UG22ICT1022</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/hauwa.jpg">
+                <h5>Hauwa Abdulaziz Garba</h5>
+                <h6>UG19LIS1232</h6>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/bg.jpg">
+                <h5>Rahama Mustafa</h5>
+                <h6>UG22CSC1039</h6>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <p>&copy; 2023 Group 12</p>
+      </div>
+</body>
+</html>

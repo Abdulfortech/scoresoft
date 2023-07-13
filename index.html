@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreSoft | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /**************** style for background ****************/
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            background-image: url('img/bg (2).jpg');
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* opacity: 0.9 */
+            /* background-color: #0fe62c; */
+        }
+        /************** start : Navigation bar ***************/
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0c6fda;
+            /* opacity: 1 */
+        }
+        /**************** this organizes the navigation buttons horizantally and starting from right direction ****************/
+        .nav li {
+            float: right;
+        }
+        /* this places our logo to be in the left side of the navigation */
+        .nav li.active {
+            float: left;
+        }
+        /* this  gives a different style to our logo */
+        .nav li.active a {
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff;
+        }
+        /* this  gives a style to buttons on the navigation bar*/
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* this style handle the hover, it means the style that will appear if you hover the buttons */
+        li a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /* style for hovering over the logo */
+        .nav li.active a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /**************** end : navigation bar ****************/
+
+        /************** start : cover **************/
+        /* this align all the element in cover to be at the center */
+        .cover {
+            align-items: center;
+        }
+        /* this style yumsuk logo to be rounded and have border */
+        .cover .logo{
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            border: 5px solid #333;
+        }
+        /* this style the container that contain text in the cover */
+        .cover .cover-text {
+            width: 500px;
+            color: #fff;
+        }
+        /* this style the big text in the cover */
+        .cover .cover-text .text2{
+            font-size: 45px;
+            margin-bottom: 0px;
+        }
+        /* this style the copywriting in the cover */
+        .cover .cover-text p{
+            font-size: 19px;
+            margin-bottom: 0px;
+        }
+        /* this is the style that customize the buttons on the cover */
+        .btn1{
+            width: auto;
+            padding: 14px 16px;
+            background-color: #0c6fda;
+            border-radius: 5px;
+            margin: 5px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        /**************** end : cover ****************/
+    </style>
+</head>
+<body>
+    <!-- start : navigation bar -->
+    <ul class="nav">
+        <li class="active"><a href="index">ScoreSoft</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li ><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li ><a href="index.html">Home</a></li>
+    </ul>
+    <!-- end : navigation bar -->
+    
+    <!-- start: cover -->
+    <div class="cover">
+        <center>
+            <!-- rounded img that contain yumsuk logo-->
+            <img src="img/yumsuk.jpeg" class="logo">
+            <div class="cover-text">
+                <h1 class="text1">Welcome to </h1>
+                <h1 class="text2">ScoreSoft Product Page</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam impedit at molestiae voluptates totam pariatur! Quam quisquam cum, odio optio quaerat sint suscipit ea, ad, placeat aut voluptas sed facilis!</p>
+            </div>
+            <br><br>
+            <a href="product.html" class="btn1">Check Our Product</a>
+            <a href="team.html" class="btn1">Check Our Team</a>
+        </center>
+    </div>
+    <!-- end : cover -->
+</body>
+</html>

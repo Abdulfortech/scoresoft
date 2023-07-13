@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreSoft | Product</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      /**************** style for background ****************/
+      body{
+            /* opacity: 0.9 */
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+        }
+        /************** start : Navigation bar ***************/
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0c6fda;
+            /* opacity: 1 */
+        }
+        /**************** this organizes the navigation buttons horizantally and starting from right direction ****************/
+        .nav li {
+            float: right;
+        }
+        /* this places our logo to be in the left side of the navigation */
+        .nav li.active {
+            float: left;
+        }
+        /* this  gives a different style to our logo */
+        .nav li.active a {
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff;
+        }
+        /* this  gives a style to buttons on the navigation bar*/
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* this style handle the hover, it means the style that will appear if you hover the buttons */
+        li a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /* style for hovering over the logo */
+        .nav li.active a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /**************** end : navigation bar ****************/
+
+        /**************** start : title section ****************/
+        /* styling the title container */
+        .title-section {
+            border-width: 5px;
+            width: 600px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 55px;
+            text-align: center;
+        }
+        /* styling the title element */
+        .title-section h1{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 50px;
+            color: #0c6fda;
+            /* margin-left: 0px; */
+        }
+        /* styling sub title */
+        .sub-title{
+            color:#0c6fda;
+            text-align: left;
+        }
+        /**************** end : title section ****************/
+
+        /**************** start : container ****************/
+      .col-md-6{
+          width: 700px;
+          background-color: #f4f4f4;
+          border-radius: 10px;
+          padding: 10px;
+      }
+      /* grid container */
+      .row{
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-gap: 10px;
+          /* background-color: #2196F3; */
+          padding: 10px;
+      }
+      /* grid box */
+      .row > div {
+          text-align: center;
+          align-items: center;
+          padding: 20px 0;
+        }
+        /* score text */
+        .row .score{
+          font-size: 26px;
+        }
+        /* styling input fields */
+        input{
+          height: 20px;
+          border-radius: 10px;
+          padding: 5px;
+        }
+        /* input grid */
+      .input-row{
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-gap: 10px;
+          /* background-color: #2196F3; */
+          padding: 10px;
+      }
+      /* giving width to input */
+      .input-row input {
+          width: 98%;
+        }
+        /* aligning text in grid box */
+      .input-row div {
+          text-align: left;
+      }
+      /* styling button */
+      button {
+          width: 100px;
+          height: 30px;
+          padding: 5px 16px;
+          background-color: #0c6fda;
+          color: #fff;
+          border-radius: 10px;
+      }
+      /* footer */
+      .footer {
+        margin-top: 200px;
+        height: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        background-color: #0c6fda;
+        color: white;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <!-- start : navigation bar -->
+    <ul class="nav">
+      <li class="active"><a href="index">ScoreSoft</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li ><a href="gallery.html">Gallery</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li ><a href="index.html">Home</a></li>
+  </ul>
+  <!-- end: navigation bar -->
+  <!-- start : body container -->
+  <div class="body">
+      <!-- section title -->
+      <div class="title-section">
+          <h1 class="title">ScoreSoft Product</h1>
+      </div>
+        <center>
+          <!-- start : container  -->
+            <div class="col-md-6">
+                <div class="container">
+                  <h2 class="sub-title" style="text-align: center;">Title : <span id="titleDisplay">Competition</span></h2>
+                  <p class="playing-score">Playing Score : <span id="scoreDisplay">5</span></p>
+                  <div class="row">
+                    <!-- player -->
+                    <div class="player" id="p1Container">
+                      <i class="fa fa-user-circle" style="font-size: 100px;"></i>
+                      <h3 id="p1Display">Player One</h3>
+                      <button class="btn btn-dark mt-2 p-1" id="p1">Add Score</button>
+                    </div>
+                    <!-- score -->
+                    <div class="score">
+                      <h1 class="font-weight-bold">
+                        <span id="p1Score">0</span> 
+                        : 
+                        <span id="p2Score">0</span>
+                      </h1>
+                    </div>
+                    <!-- player -->
+                    <div class="player" id="p2Container">
+                      <i class="fa fa-user-circle" style="font-size: 100px;"></i>
+                      <h3 id="p2Display">Player Two</h3>
+                      <button class="btn btn-dark mt-2 p-1" id="p2">Add Score</button>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="container">
+                    <form>
+                        <div class="input-row">
+                            <div class="md">
+                                <label>Competition Title</label>
+                                <input type="text" id="titleInput">
+                            </div>
+                            <div class="md">
+                                <label>Score Limit</label>
+                                <input type="number" id="scoreInput" >
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="md">
+                                <label>Player One Title</label><br>
+                                <input type="text" id="p1Input" >
+                            </div>
+                            <div class="md">
+                                <label>Player Two Title</label><br>
+                                <input type="text" id="p2Input" >
+                            </div>
+                        </div>
+                    </form>
+                    <center> <button class="btn btn-dark p-2" id="reset">Reset</button> </center>
+                  </div>
+                </div>
+          
+              </div>
+        </center>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 Group 12</p>
+    </div>
+    <script src="scorekeeper.js"></script>
+</body>
+</html>

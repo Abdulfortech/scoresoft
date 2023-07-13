@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreSoft | Gallery</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /**************** style for background ****************/
+        body{
+            /* opacity: 0.9 */
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+        }
+        /************** start : Navigation bar ***************/
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0c6fda;
+            /* opacity: 1 */
+        }
+        /**************** this organizes the navigation buttons horizantally and starting from right direction ****************/
+        .nav li {
+            float: right;
+        }
+        /* this places our logo to be in the left side of the navigation */
+        .nav li.active {
+            float: left;
+        }
+        /* this  gives a different style to our logo */
+        .nav li.active a {
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff;
+        }
+        /* this  gives a style to buttons on the navigation bar*/
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* this style handle the hover, it means the style that will appear if you hover the buttons */
+        li a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /* style for hovering over the logo */
+        .nav li.active a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /**************** end : navigation bar ****************/
+
+        /**************** start : title section ****************/
+        /* styling the title container */
+        .title-section {
+            border-width: 5px;
+            width: 600px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 55px;
+            text-align: center;
+        }
+        /* styling the title element */
+        .title-section h1{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 50px;
+            color: #0c6fda;
+            /* margin-left: 0px; */
+        }
+        /* styling sub title */
+        .sub-title{
+            color:#0c6fda;
+            text-align: left;
+        }
+        /**************** end : title section ****************/
+
+        /**************** start : grid container ****************/
+        .gallery-row{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        /* gird box */
+        .gallery-row div {
+            height: 260px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            border: 3px solid #0c6fda;
+            text-align: center;
+        }
+        /* styling the image inside the grid box */
+        .gallery-row div img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10px 10px 0px 0px;
+        }
+        /* footer */
+        .footer {
+            margin-top: 200px;
+            height: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            background-color: #0c6fda;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- start : navigation bar -->
+    <ul class="nav">
+        <li class="active"><a href="index">ScoreSoft</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li ><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li ><a href="index.html">Home</a></li>
+    </ul>
+    <!-- end: navigation bar -->
+    <!-- start : body container -->
+    <div class="body">
+        <!-- section title -->
+        <div class="title-section">
+            <h1 class="title">ScoreSoft Gallery</h1>
+        </div>
+        <!-- start : container grid for gallery -->
+        <div class="gallery-row">
+            <!-- grid box -->
+            <div>
+                <img src="img/bg (4).jpg">
+                <p>YUMSUK Marticulation 2023</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/bg (5).jpg">
+                <p>YUMSUK Marticulation 2023</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/bg (6).jpg">
+                <p>YUMSUK Marticulation 2023</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/bg (7).jpg">
+                <p>YUMSUK Marticulation 2023</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/bg (8).jpg">
+                <p>YUMSUK Marticulation 2023</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/abdallah.jpg">
+                <p>Abdallah Muazzam Yakasai</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/maryam.jpg">
+                <p>Maryam Wada Ado</p>
+            </div>  
+            <!-- grid box -->
+            <div>
+                <img src="img/team/muhammad.jpg">
+                <p>Muhammad Junaidu</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/mubarrak.jpg">
+                <p>Mubarak Adam Aminu</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/faiza.jpg">
+                <p>Faiza Adam Kankarofi</p>
+            </div> 
+            <!-- grid box -->
+            <div>
+                <img src="img/team/muazzam.jpg">
+                <p>Muazzam Wada</p>
+            </div>
+            <!-- grid box -->
+            <div>
+                <img src="img/team/hauwa.jpg">
+                <p>Hauwa Abdulaziz</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2023 Group 12</p>
+    </div>
+</body>
+</html>

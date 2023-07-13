@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreSoft | About Us</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /**************** style for background ****************/
+        body{
+            /* opacity: 0.9 */
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+        }
+        /************** start : Navigation bar ***************/
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0c6fda;
+            /* opacity: 1 */
+        }
+        /**************** this organizes the navigation buttons horizantally and starting from right direction ****************/
+        .nav li {
+            float: right;
+        }
+        /* this places our logo to be in the left side of the navigation */
+        .nav li.active {
+            float: left;
+        }
+        /* this  gives a different style to our logo */
+        .nav li.active a {
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff;
+        }
+        /* this  gives a style to buttons on the navigation bar*/
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* this style handle the hover, it means the style that will appear if you hover the buttons */
+        li a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /* style for hovering over the logo */
+        .nav li.active a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+        /**************** end : navigation bar ****************/
+
+        /**************** start : title section ****************/
+        /* styling the title container */
+        .title-section {
+            border-width: 5px;
+            width: 600px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 55px;
+            text-align: center;
+        }
+        /* styling the title element */
+        .title-section h1{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 50px;
+            color: #0c6fda;
+            /* margin-left: 0px; */
+        }
+        /* styling sub title */
+        .sub-title{
+            color:#0c6fda;
+            text-align: left;
+        }
+        /**************** end : title section ****************/
+
+        /**************** start : container ****************/
+        /* styling the container */
+        .about-container{
+            width: 700px;
+        }
+        /* styling paragraph in the container */
+        .about-container p{
+            text-justify:justify;
+            text-align: justify;
+            font-size:20px;
+        }
+        /**************** end : container ****************/
+
+        /**************** start : footer ****************/
+        .footer {
+            /* position: fixed; */
+            margin-top: 200px;
+            height: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            background-color: #0c6fda;
+            color: white;
+            text-align: center;
+        }
+        /**************** end : footer ****************/
+    </style>
+</head>
+<body>
+    <!-- start : navigation bar -->
+    <ul class="nav">
+        <li class="active"><a href="index">ScoreSoft</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li ><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li ><a href="index.html">Home</a></li>
+    </ul>
+    <!-- end: navigation bar -->
+    <!-- start : body container -->
+    <div class="body">
+        <!-- section title -->
+        <div class="title-section">
+            <h1 class="title">About ScoreSoft</h1>
+        </div>
+        <center>
+            <!-- container -->
+            <div class="about-container">
+                <!-- sub title -->
+                <h2 class="sub-title">What is ScoreSoft?</h3>
+                <!-- paragraph -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magni quas optio, amet perferendis quidem recusandae dicta, reiciendis enim ratione molestiae est voluptatum. Voluptates, doloribus. Illo error libero reprehenderit quam.
+                </p>
+                <!-- sub title --->
+                <h2 class="sub-title">Who built ScoreSoft ?</h3>
+                <!-- paragraph -->
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magni quas optio, amet perferendis quidem recusandae dicta, reiciendis enim ratione molestiae est voluptatum. Voluptates, doloribus. Illo error libero reprehenderit quam.
+                </p>
+            </div>
+        </center>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <p>&copy; 2023 Group 12</p>
+    </div>
+</body>
+</html>

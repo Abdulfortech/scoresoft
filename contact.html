@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreSoft | Contact Us</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body{
+            /* opacity: 0.9 */
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fff;
+        }
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            margin-top: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0c6fda;
+            /* opacity: 1 */
+        }
+
+        .nav li {
+            float: right;
+        }
+
+        .nav li.active {
+            float: left;
+        }
+
+        .nav li.active a {
+            font-weight: 900;
+            font-size: 20px;
+            color: #fff;
+        }
+        li a{
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #fff;
+            color: #0c6fda;
+        }
+
+        .title-section {
+            border-width: 5px;
+            width: 600px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 55px;
+            text-align: center;
+        }
+
+        .title-section h1{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 50px;
+            color: #0c6fda;
+            /* margin-left: 0px; */
+        }
+
+        .contact{
+            width: 600px;
+            align-self: center;
+            border-radius: 10px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: left;
+        }
+        .contact p{
+            text-align: center;
+        }
+
+        .contact input[type=text], .contact input[type=email], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .contact input[type=submit] {
+            width: 100%;
+            background-color: #0c6fda;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact input[type=submit]:hover {
+            background-color: #0c6fda;
+        }
+        .footer {
+            /* position: fixed; */
+            margin-top: 200px;
+            height: 35px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 100%;
+            background-color: #0c6fda;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- navigation bar -->
+    <ul class="nav">
+        <li class="active"><a href="index">ScoreSoft</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li ><a href="gallery.html">Gallery</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li ><a href="index.html">Home</a></li>
+    </ul>
+    <div class="body">
+        <div class="title-section">
+            <h1 class="title">Contact Us</h1>
+        </div>
+        <center>
+            <div class="contact">
+                <p>Keep in touch with us by sending us a message</p>
+                <form >
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                    <label for="lname">Email</label>
+                    <input type="email" id="lname" name="lastname" placeholder="Your email.." required>
+                
+                    <label for="country">Message</label>
+                    <textarea rows="5" required></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </center>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Group 12</p>
+    </div>
+</body>
+</html>
